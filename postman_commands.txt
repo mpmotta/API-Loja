@@ -1,0 +1,34 @@
+GET http://localhost/API-Loja/produtos
+GET http://localhost/API-Loja/produtos/5
+POST http://localhost/API-Loja/produtos
+Body (JSON):
+{
+      "nome": "iPhone 16 Pro Max (512 GB) – Titânio preto",
+      "marca": "Apple",
+      "imagem": "no-image.jpg",
+      "categoria": "Celulares",
+      "valor": "9179.10",
+      "disponibilidade": 1
+}
+
+PUT http://localhost/API-Loja/produtos/5
+Body (JSON):
+{
+      "nome": "iPhone 16 Pro Max (512 GB) – Titânio preto",
+      "marca": "Apple",
+      "imagem": "no-image.jpg",
+      "categoria": "Celulares",
+      "valor": "9179.10",
+      "disponibilidade": 1
+}
+
+DELETE http://localhost/API-Loja/produtos/5
+
+GET http://localhost/API-Loja/produtos/categoria/Celulares
+GET http://localhost/API-Loja/produtos/nome/iPhone
+GET http://localhost/API-Loja/produtos/marca/Apple
+GET http://localhost/API-Loja/produtos/valorMenor/200
+GET http://localhost/API-Loja/produtos/valorMaior/200
+GET http://localhost/API-Loja/produtos/valorEntre/100/300
+GET http://localhost/API-Loja/produtos/disponibilidade/true
+GET http://localhost/API-Loja/produtos/disponibilidade/false
